@@ -20,7 +20,7 @@ syn region  aslBlock            start="{" end="}" transparent fold
 syn keyword aslTodo             contained TODO FIXME XXX NOTE
 
 syn region  aslComment          display start="//" skip="\\$" end="$" keepend contains=aslTodo
-syn region  aslComment          display start="/\*" end="\*\/" contains=aslTodo
+syn region  aslComment          start="/\*" end="\*\/" contains=aslTodo
 
 syn region  aslString           start=/"/ skip=/\\"/ end=/"/
 
